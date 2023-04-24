@@ -624,103 +624,7 @@ body {
 
 
 
-    /*---------------- Nav --------------------*/
-
-
-    .nav__container {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 15555;
-
-    }
-
-
-    .nav__items {
-
-        display: block;
-        position: absolute;
-        padding: 0;
-        background: #eee;
-        top: 100px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        align-items: center;
-        gap: 4em;
-        justify-items: center;
-        justify-content: center;
-        align-content: center;
-        transition: all .4s;
-        transform: translateY(-100%);
-        z-index: -5;
-    }
-
-    .nav__items--open {
-        transform: translate(0);
-    }
-
-    .contenedor {
-        display: grid;
-        /* background: #000; */
-        justify-content: unset;
-        gap: 1em;
-        width: 80%;
-        padding: 24px 1em;
-        margin: 0 auto;
-
-
-    }
-
-    .nav__icons--remplazo {
-        display: grid;
-        gap: 1em;
-    }
-
-    .nav__icons {
-        display: none;
-        gap: 1em;
-    }
-
-    .nav__item {
-        color: var(--secondary);
-        font-size: 1em;
-        font-weight: 500;
-        transition: color .2s;
-    }
-
-    .nav__item--menu {
-        display: block;
-    }
-
-    .icon__hamburger {
-        display: block;
-        cursor: pointer;
-        padding: .6em;
-        font-size: 1.5em;
-        color: var(--secondary);
-        background: #fff;
-        border-radius: 10px;
-        transition: all .2s;
-
-    }
-
-    .icon__hamburger:hover {
-        display: block;
-        padding: .6em;
-        font-size: 1.5em;
-        color: #fff;
-
-        background: var(--primary);
-
-    }
-
-    .nav__search {
-        display: none;
-    }
-
-    /*---------------- Fin Nav --------------------*/
+   
 
     /*---------------- Products --------------------*/
 
@@ -887,8 +791,109 @@ body {
 
     /*---------------- Fin Banner --------------------*/
 
+}
 
 
 
+@media (max-width:992px) {
+
+
+ /*---------------- Nav --------------------*/
+
+
+ .nav__container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 15555;
+
+}
+
+
+.nav__items {
+
+    display: block;
+    position: absolute;
+    padding: 0;
+    background: #eee;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    gap: 4em;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: all .4s;
+    transform: translateY(-100%);
+    z-index: -5;
+}
+
+.nav__items--open {
+    transform: translate(0);
+}
+
+.contenedor {
+    display: grid;
+    /* background: #000; */
+    justify-content: unset;
+    gap: 1em;
+    width: 80%;
+    padding: 24px 1em;
+    margin: 0 auto;
+
+
+}
+
+.nav__icons--remplazo {
+    display: grid;
+    gap: 1em;
+}
+
+.nav__icons {
+    display: none;
+    gap: 1em;
+}
+
+.nav__item {
+    color: var(--secondary);
+    font-size: 1em;
+    font-weight: 500;
+    transition: color .2s;
+}
+
+.nav__item--menu {
+    display: block;
+}
+
+.icon__hamburger {
+    display: block;
+    cursor: pointer;
+    padding: .6em;
+    font-size: 1.5em;
+    color: var(--secondary);
+    background: #fff;
+    border-radius: 10px;
+    transition: all .2s;
+
+}
+
+.icon__hamburger:hover {
+    display: block;
+    padding: .6em;
+    font-size: 1.5em;
+    color: #fff;
+
+    background: var(--primary);
+
+}
+
+.nav__search {
+    display: none;
+}
+
+/*---------------- Fin Nav --------------------*/
 
 }
